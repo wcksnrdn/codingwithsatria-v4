@@ -1,0 +1,9 @@
+p {
+    line-height: 1.5; /* Atur jarak antar baris untuk keterbacaan */
+    margin: 0; /* Hapus margin jika diperlukan */
+  }
+  
+  .word {
+    display: inline-block; /* Memastikan kata-kata tidak terputus di baris baru */
+  }
+  

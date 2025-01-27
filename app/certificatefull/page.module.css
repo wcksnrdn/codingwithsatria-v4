@@ -1,0 +1,39 @@
+.circle-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle-animation::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgb(61, 61, 61); /* Ganti warna sesuai kebutuhan */
+    animation: wave 1s ease-out forwards;
+  }
+  
+  @keyframes wave {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    50% {
+      width: 200vw; /* Ganti ukuran sesuai kebutuhan */
+      height: 200vw; /* Ganti ukuran sesuai kebutuhan */
+      opacity: 0.5;
+    }
+    100% {
+      width: 300vw; /* Ganti ukuran sesuai kebutuhan */
+      height: 300vw; /* Ganti ukuran sesuai kebutuhan */
+      opacity: 0;
+    }
+  }
+  

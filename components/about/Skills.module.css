@@ -1,0 +1,33 @@
+.shine-border {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent; /* Sesuaikan ketebalan border */
+    background: linear-gradient(90deg, rgba(255,255,255,0.5), transparent);
+    background-clip: padding-box;
+    z-index: 1;
+  }
+  
+  .shine-border::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.7), transparent);
+    animation: shine 2s infinite;
+    z-index: -1;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 0%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
